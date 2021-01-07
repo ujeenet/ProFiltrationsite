@@ -21,6 +21,18 @@ add_image_size( 'fp-small', 640 );
 add_image_size( 'fp-medium', 1024 );
 add_image_size( 'fp-large', 1200 );
 add_image_size( 'fp-xlarge', 1920 );
+add_image_size( 'fp-xlarge', 1920 );
+add_image_size( 'headerslider', 800 , 500,false );
+add_image_size( 'home-slider', 480 , 640, true );
+add_image_size( 'galery-slider', 800 , 600,true );
+add_image_size( 'social', 20,20 );
+add_image_size('serviceslider',180,200, false);
+add_image_size('mobileslider',130,190, false);
+add_image_size('products',230,176.4, false);
+add_image_size('productsinfo',170,300, false);
+add_image_size('language',27,27, false);
+add_image_size('single-img',150,200, false);
+
 
 // Register the new image sizes for use in the add media modal in wp-admin
 function foundationpress_custom_sizes( $sizes ) {

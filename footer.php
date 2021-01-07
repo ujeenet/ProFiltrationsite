@@ -11,11 +11,16 @@
 
 <footer class="footer-container">
 	<div class="footer-grid">
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
-	</div>
+		<?php dynamic_sidebar('footer-widgets'); ?>
+		<div class="column large-12 small-12 copyright">
+			<p><?php the_field('copyright', 'options'); ?></p>
+		</div>
+		<div class="column large-12 small-12 link">
+			<?php the_field('created-by','options');  ?>
+		</div>
 </footer>
 
-<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
+<?php if (get_theme_mod('wpt_mobile_menu_layout') === 'offcanvas') : ?>
 	</div><!-- Close off-canvas content -->
 <?php endif; ?>
 

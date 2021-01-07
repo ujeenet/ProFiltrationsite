@@ -1,0 +1,141 @@
+.headerslider {
+  position: absolute;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow: visible;
+
+  .slider-description{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hover {
+
+    .slider-title {
+      color: white;
+      background-color: #000000;
+      &:before{
+        color: #e0b000;
+      }
+    }
+    .slider-description {
+      color: white;
+      visibility: visible;
+      top: 27%;
+      transition: 0.3s;
+      background-color: #000000;
+    }
+  }
+}
+.slider-image {
+  width: 100%;
+  z-index: 1;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.sliderwrapper {
+  position: absolute;
+  width: 100%;
+  top: 0.25rem;
+  margin-top: 1rem;
+  transition: 0.3s;
+  text-align: center;
+
+  .slider-title {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50%;
+    max-width: 60%;
+    z-index: 9999;
+    transition: 0.3s;
+    color: rgb(255, 197, 0);
+    background-color: black;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: bolder;
+    &:before{
+      content: 'PRO';
+      color: white;
+    }
+  }
+  .slider-description{
+
+    font-size: 3rem;
+    max-width: 60%;
+    transition: 0.3s ease;
+    color: #000000;
+    z-index: 46;
+    visibility: hidden;
+  }
+
+}
+
+.slick-prev,
+.slick-next,
+.slick-next3,
+.slick-prev3{
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -12px;
+  padding: 0;
+  border: 1px;
+  background-color: transparent;
+  border-left: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  transition: all .2s ease;
+  opacity: .7;
+  cursor: pointer;
+  z-index: 3567;
+  &::after{
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: "";
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    transform: translateY(10px) translatex(10px);
+  }
+}
+
+.slick-prev {
+  left: 20px;
+  transform: rotate(-45deg);
+}
+
+
+.slick-next {
+  right: 20px;
+  transform: rotate(135deg);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 1;
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+  box-shadow: none;
+}.slick-prev3 {
+  left: 20px;
+  transform: rotate(-45deg);
+}
+
+
+.slick-next3 {
+  right: 20px;
+  transform: rotate(135deg);
+}
+
+.slick-prev3:hover,
+.slick-next3:hover {
+  opacity: 1;
+}
+
+.slick-prev3:focus,
+.slick-next3:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,29 @@
+.sociallinks {
+
+  text-align: right;
+  ul {
+    list-style: none;
+    height: 20px;
+  }
+
+  li {
+    img {
+      height: 1.2rem;
+    }
+
+    float: right;
+    margin: 1.1px;
+
+    transition: all 0.45s;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.45s ease;
+    }
+  }
+
+
+  .socialicon {
+    height: 16px;
+  }
+}

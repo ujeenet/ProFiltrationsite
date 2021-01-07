@@ -68,7 +68,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1024);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -77,13 +77,14 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
+$light-gray: #FBFBFB;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #000000;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
+$yellow: #c67b00;
 $body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -140,21 +141,21 @@ $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
-  small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
-  ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 3rem),
+    'h2': ('font-size': 2.5rem),
+    'h3': ('font-size': 2rem),
+    'h4': ('font-size': 1.5rem),
+    'h5': ('font-size': 1rem),
+    'h6': ('font-size': 0.5rem),
+  ),
+  small: (
+    'h1': ('font-size': 3rem),
+    'h2': ('font-size': 2.5rem),
+    'h3': ('font-size': 2rem),
+    'h4': ('font-size': 1.5rem),
+    'h5': ('font-size': 1rem),
+    'h6': ('font-size': 0.5rem),
   ),
 );
 $header-text-rendering: optimizeLegibility;
